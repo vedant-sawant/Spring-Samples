@@ -3,10 +3,15 @@ package org.vedant;
 public class Employee {
    private int age;
    private Payout payee;
-   public void setAge(int age)
+
+   public Employee(int age,Payout payee)
    {
+       System.out.println("This is a Constructor of Employee");
+       this.payee=payee;
        this.age=age;
    }
+
+
 
    //getter and setters for age
    public int getAge()
@@ -14,11 +19,7 @@ public class Employee {
        return age;
    }
 
-    //getter and setters for payout
-    public void setPayee(Payout payee)
-    {
-        this.payee=payee;
-    }
+
     public Payout getPayee()
     {
         return payee;

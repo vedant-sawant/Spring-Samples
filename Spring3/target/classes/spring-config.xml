@@ -5,8 +5,9 @@
 <beans>
 
     <bean id="empid" class="org.vedant.Employee">
-    <property name="age" value="23"/>
-        <property name="payee" ref="payeeid"/>
+
+        <constructor-arg index="0" value="23"/>
+        <constructor-arg index="1" ref="payeeid"/>
     </bean>
 
     <bean id="payeeid" class="org.vedant.Payout"/>
